@@ -21,6 +21,11 @@
 - **スタイリング**: 素の CSS（`App.css` / `index.css`）
 - **環境変数**: SupabaseのProject URLとPublishable keyは `.env`（`VITE_SUPABASE_URL` / `VITE_SUPABASE_PUBLISHABLE_KEY`）で管理し、`.gitignore` でGit管理対象外にする。設定例は `.env.example` を参照する。**`.env` の値をコミットしたり、チャットやログに直接貼り付けたりしない。**
 
+## デプロイ情報
+
+- 本番URL：https://プロジェクト名.vercel.app
+- Supabaseプロジェクト名：realestate-app
+
 ## ディレクトリ構成 / 命名規約
 
 - `src/pages/` : 画面単位のコンポーネント（`LoginPage.jsx`, `SignupPage.jsx`, `PropertiesPage.jsx`）
