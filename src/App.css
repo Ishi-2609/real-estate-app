@@ -137,3 +137,98 @@
   font-size: 14px;
   color: var(--text);
 }
+
+.property-layout {
+  font-size: 14px;
+  color: var(--text);
+  margin-top: 2px;
+}
+
+.property-card-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.property-card-actions button {
+  font: inherit;
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text-h);
+  cursor: pointer;
+}
+
+.property-card-actions button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* 物件登録・編集フォーム */
+.property-form-section {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.property-form-section h2 {
+  margin-bottom: 12px;
+}
+
+.property-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+  align-items: end;
+}
+
+.property-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.property-form input {
+  font: inherit;
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text-h);
+  box-sizing: border-box;
+}
+
+.property-form .error-message {
+  grid-column: 1 / -1;
+}
+
+.property-form-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.property-form-actions button {
+  font: inherit;
+  padding: 8px 16px;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+}
+
+.property-form-actions button[type='button'] {
+  background: var(--bg);
+  color: var(--text-h);
+  border-color: var(--border);
+}
+
+.property-form-actions button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
